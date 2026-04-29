@@ -78,7 +78,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
 /* ── SECTION HEADERS with color bands ── */
 
-.shead-1{background:linear-gradient(135deg,#1a2e20 0%,#0f1a12 100%);padding:2rem 3rem;margin-bottom:0}
+.shead-1{background:linear-gradient(135deg,#2d6b42 0%,#1e4d2e 100%);padding:2rem 3rem;margin-bottom:0}
 
 .shead-2{background:linear-gradient(135deg,#0f1e2e 0%,#0a1520 100%);padding:2rem 3rem;margin-bottom:0}
 
@@ -90,7 +90,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
 .shead-eyebrow{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.5rem}
 
-.shead-1 .shead-eyebrow{color:rgba(45,90,61,.8)}
+.shead-1 .shead-eyebrow{color:rgba(160,230,180,.85)}
 
 .shead-2 .shead-eyebrow{color:rgba(29,100,160,.8)}
 
@@ -378,7 +378,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
 /* ── TIMELINE ── */
 
-.timeline{display:grid;grid-template-columns:36.3fr 14.7fr 45.6fr 1.5fr;gap:0;margin-bottom:2rem;border-radius:var(--rl);overflow:hidden;border:1px solid var(--brd);min-height:88px}
+.timeline{display:grid;grid-template-columns:36.3fr 14.7fr 45.6fr 1.5fr 1.9fr;gap:0;margin-bottom:2rem;border-radius:var(--rl);overflow:hidden;border:1px solid var(--brd);min-height:88px}
 
 .tb{padding:1rem 1.1rem;position:relative;cursor:default}
 
@@ -408,6 +408,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
 .divider{border:none;border-top:1px solid var(--brd);margin:2rem 0}
 
+
+.tb-5{background:rgba(90,58,110,.08);border-left:1px solid var(--brd)}
+.tb-5 .tb-lbl{color:#7a5a8a}
+.tb-5 .tb-n{color:#7a5a8a}
 </style>
 
 </head>
@@ -536,7 +540,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="tb tb-4"><div class="tb-lbl">Vacacional invierno</div><div class="tb-dates">5 – 31 dic 2025</div><div class="tb-n">108</div><div class="tb-s">tx en sistema · 1.5%</div></div>
 
-        <div class="tb tb-4"><div class="tb-lbl">Prep. inscripción (1–20 ene)</div><div class="tb-dates">1 – 20 ene 2025</div><div class="tb-n">130</div><div class="tb-s">tx en sistema · periodo de preparación</div></div>
+        <div class="tb tb-5"><div class="tb-lbl">Prep. inscripción (1–20 ene)</div><div class="tb-dates">1 – 20 ene 2025</div><div class="tb-n">130</div><div class="tb-s">tx en sistema · periodo de preparación</div></div>
 
       </div>
 
@@ -679,74 +683,62 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
       </div>
 
       <div class="pcard pcard-4">
-
-        <div class="pcard-hd"><span class="ppill pp4">Vacacional invierno</span><h3>5 – 31 diciembre 2025</h3><span class="pdates">Docentes y alumnos de Preparación para el servicio</span></div>
-
-        <div class="pcard-hd"><span class="ppill pp4">Prep. inscripción (1–20 ene)</span><h3>1 – 20 enero 2025</h3><span class="pdates">Periodo previo a inscripción</span></div>
-
-        <div class="mgrid">
-
-          <div class="mg"><div class="mgl">Préstamos</div><div class="mgn c-pres">65</div><div class="mgs">60.2% del periodo</div></div>
-
-          <div class="mg"><div class="mgl">Renovaciones</div><div class="mgn c-renov">43</div><div class="mgs">39.8% del periodo</div></div>
-
-          <div class="mg"><div class="mgl">Devoluciones</div><div class="mgn c-devol">102</div><div class="mgs">156.9% de los préstamos</div></div>
-
-          <div class="mg"><div class="mgl">Préstamos</div><div class="mgn c-pres">45</div><div class="mgs">60.2% del periodo</div></div>
-
-          <div class="mg"><div class="mgl">Renovaciones</div><div class="mgn c-renov">85</div><div class="mgs">39.8% del periodo</div></div>
-
-          <div class="mg"><div class="mgl">Devoluciones</div><div class="mgn c-devol">102</div><div class="mgs">conteo de devoluciones actualizado</div></div>
-
-          <div class="mg"><div class="mgl">Usuarios únicos</div><div class="mgn">30</div><div class="mgs">IDs distintos</div></div>
-
-          <div class="mg"><div class="mgl">Tx / usuario</div><div class="mgn">3.60</div><div class="mgs">108 ÷ 30</div></div>
-
-          <div class="mg"><div class="mgl">Tasa renovación</div><div class="mgn">39.8%</div><div class="mgs">43 ÷ 108</div></div>
-
-          <div class="mg"><div class="mgl">Tx / usuario</div><div class="mgn">4.33</div><div class="mgs">130 ÷ 30</div></div>
-
-          <div class="mg"><div class="mgl">Renovaciones del periodo</div><div class="mgn">39.8%</div><div class="mgs">85 ÷ 130</div></div>
-
-       </div>
-
+    <div class="pcard-hd">
+      <span class="ppill pp4">Vacacional invierno</span>
+      <h3>5 – 31 diciembre 2025</h3>
+      <span class="pdates">Docentes y alumnos de Preparación para el servicio</span>
+    </div>
+    <div class="mgrid">
+      <div class="mg"><div class="mgl">Préstamos</div><div class="mgn c-pres">65</div><div class="mgs">60.2% del periodo</div></div>
+      <div class="mg"><div class="mgl">Renovaciones</div><div class="mgn c-renov">43</div><div class="mgs">39.8% del periodo</div></div>
+      <div class="mg"><div class="mgl">Devoluciones</div><div class="mgn c-devol">102</div><div class="mgs">Incluye devol. del 1° semestre</div></div>
+      <div class="mg"><div class="mgl">Usuarios únicos</div><div class="mgn">30</div><div class="mgs">IDs distintos</div></div>
+      <div class="mg"><div class="mgl">Tx / usuario</div><div class="mgn">3.60</div><div class="mgs">108 ÷ 30</div></div>
+      <div class="mg"><div class="mgl">Tasa renovación</div><div class="mgn">39.8%</div><div class="mgs">43 ÷ 108</div></div>
+    </div>
     <table class="triple">
-
       <thead><tr><th>Operación</th><th>Total</th><th>Días atendidos</th><th>Promedio diario</th><th>Usuarios únicos</th><th>Prom. / usuario</th></tr></thead>
-
       <tbody>
-
         <tr><td><span class="op-dot" style="background:var(--p4)"></span><strong>Préstamos</strong></td><td><span class="mono">65</span></td><td><span class="mono">16</span></td><td><span class="bnum c-pres">4.06</span></td><td><span class="mono">19</span></td><td><span class="bnum">3.42</span></td></tr>
-
         <tr><td><span class="op-dot" style="background:var(--a4)"></span><strong>Renovaciones</strong></td><td><span class="mono">43</span></td><td><span class="mono">27</span></td><td><span class="bnum c-renov">1.59</span></td><td><span class="mono">15</span></td><td><span class="bnum">2.87</span></td></tr>
-
-        <tr><td><span class="op-dot" style="background:var(--a2)"></span><strong>Devoluciones</strong></td><td><span class="mono">102</span></td><td><span class="mono">16</span></td><td><span class="bnum c-devol">6.37</span></td><td><span class="mono"—<td class="mono" style="color:var(--ink3)">—</td><td class="mono" style="color:var(--ink3)">—</td></tr>
-
+        <tr><td><span class="op-dot" style="background:var(--a2)"></span><strong>Devoluciones</strong></td><td><span class="mono">102</span></td><td><span class="mono">16</span></td><td><span class="bnum c-devol">6.37</span></td><td class="mono" style="color:var(--ink3)">—</td><td class="mono" style="color:var(--ink3)">—</td></tr>
         <tr><td><strong>Total P+R</strong></td><td><span class="mono">108</span></td><td>—</td><td>—</td><td><span class="mono"><strong>30</strong></span></td><td><span class="bnum">3.60</span></td></tr>
-
-        <tr><td><span class="op-dot" style="background:var(--p4)"></span><strong>Préstamos</strong></td><td><span class="mono">45</span></td><td><span class="mono">16</span></td><td><span class="bnum c-pres">4.06</span></td><td><span class="mono">19</span></td><td><span class="bnum">3.42</span></td></tr>
-
-        <tr><td><span class="op-dot" style="background:var(--a4)"></span><strong>Renovaciones</strong></td><td><span class="mono">85</span></td><td><span class="mono">27</span></td><td><span class="bnum c-renov">1.59</span></td><td><span class="mono">15</span></td><td><span class="bnum">2.87</span></td></tr>
-
-        <tr><td><span class="op-dot" style="background:var(--a2)"></span><strong>Devoluciones</strong></td><td><span class="mono">85</span></td><td><span class="mono">16</span></td><td><span class="bnum c-devol">5.31</span></td><td class="mono" style="color:var(--ink3)">—</td><td class="mono" style="color:var(--ink3)">—</td></tr>
-
-        <tr><td><strong>Total P+R</strong></td><td><span class="mono">130</span></td><td>—</td><td>—</td><td><span class="mono"><strong>30</strong></span></td><td><span class="bnum">3.60</span></td></tr>
-
       </tbody>
-
     </table>
+    <p style="font-size:11px;color:var(--ink3);margin-top:.6rem">* Sin registro de días atendidos. Las devoluciones (102) superan los préstamos (65) porque incluyen devoluciones de materiales prestados antes del 5 de diciembre. Perfil: Docentes 42 tx, P. Apoyo 11 tx, Licenciatura 11 tx, Preparatoria 11 tx.</p>
+  </div>
 
-    <p style="font-size:11px;color:var(--ink3);margin-top:.6rem">* Sin registro de días atendidos para este periodo. Las devoluciones (102) superan los préstamos (65) porque incluyen devoluciones de materiales prestados antes del 5 de diciembre. Perfil: Docentes 42 tx, P. Apoyo 11 tx, Licenciatura 11 tx, Preparatoria 11 tx.</p>
-
-    <p style="font-size:11px;color:var(--ink3);margin-top:.6rem">* Sin registro de días atendidos para este periodo. Las devoluciones registradas en preparación de inscripción fueron 85 (1–20 enero). Perfil: Docentes 42 tx, P. Apoyo 11 tx, Licenciatura 11 tx, Preparatoria 11 tx.</p>
-
+  <div class="pcard" style="background:rgba(90,58,110,.04);border-left:4px solid #7a5a8a;border:1px solid var(--brd);border-left:4px solid #7a5a8a;">
+    <div class="pcard-hd">
+      <span class="ppill" style="background:rgba(90,58,110,.12);color:#5a3a6e;">Prep. inscripción (1–20 ene)</span>
+      <h3>1 – 20 enero 2025</h3>
+      <span class="pdates">Periodo previo a inscripción · 130 tx en sistema</span>
+    </div>
+    <div class="mgrid">
+      <div class="mg"><div class="mgl">Préstamos</div><div class="mgn c-pres">45</div><div class="mgs">34.6% del periodo</div></div>
+      <div class="mg"><div class="mgl">Renovaciones</div><div class="mgn c-renov">85</div><div class="mgs">65.4% del periodo</div></div>
+      <div class="mg"><div class="mgl">Devoluciones</div><div class="mgn c-devol">85</div><div class="mgs">Igual a renovaciones</div></div>
+      <div class="mg"><div class="mgl">Usuarios únicos</div><div class="mgn">30</div><div class="mgs">IDs distintos</div></div>
+      <div class="mg"><div class="mgl">Tx / usuario</div><div class="mgn">4.33</div><div class="mgs">130 ÷ 30</div></div>
+      <div class="mg"><div class="mgl">Renovaciones del periodo</div><div class="mgn">65.4%</div><div class="mgs">85 ÷ 130</div></div>
+    </div>
+    <table class="triple">
+      <thead><tr><th>Operación</th><th>Total</th><th>Días atendidos</th><th>Promedio diario</th><th>Usuarios únicos</th><th>Prom. / usuario</th></tr></thead>
+      <tbody>
+        <tr><td><span class="op-dot" style="background:var(--p4)"></span><strong>Préstamos</strong></td><td><span class="mono">45</span></td><td class="mono" style="color:var(--ink3)">—</td><td class="mono" style="color:var(--ink3)">—</td><td><span class="mono">19</span></td><td><span class="bnum">2.37</span></td></tr>
+        <tr><td><span class="op-dot" style="background:var(--a4)"></span><strong>Renovaciones</strong></td><td><span class="mono">85</span></td><td class="mono" style="color:var(--ink3)">—</td><td class="mono" style="color:var(--ink3)">—</td><td><span class="mono">15</span></td><td><span class="bnum">5.67</span></td></tr>
+        <tr><td><span class="op-dot" style="background:var(--a2)"></span><strong>Devoluciones</strong></td><td><span class="mono">85</span></td><td class="mono" style="color:var(--ink3)">—</td><td class="mono" style="color:var(--ink3)">—</td><td class="mono" style="color:var(--ink3)">—</td><td class="mono" style="color:var(--ink3)">—</td></tr>
+        <tr><td><strong>Total P+R</strong></td><td><span class="mono">130</span></td><td>—</td><td>—</td><td><span class="mono"><strong>30</strong></span></td><td><span class="bnum">4.33</span></td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:11px;color:var(--ink3);margin-top:.6rem">* Sin registro de días atendidos. Transacciones previas al inicio formal del 2° semestre (21 enero). Perfil: Docentes 42 tx, P. Apoyo 11 tx, Licenciatura 11 tx, Preparatoria 11 tx.</p>
   </div>
 
       <div class="ins">
 
         <div class="in"><div class="it">1° Semestre: periodo más intenso</div><div class="ix">3,222 transacciones (45.6% del año). Prom. diario de préstamos: 19.91 — el más alto. Ratio devoluciones/préstamos: 100.8%.</div></div>
 
-        <div class="in"><div class="it">1° Semestre: periodo más intenso</div><div class="ix">3,222 transacciones (45.6% del año). Prom. diario de préstamos: 19.91 — el más alto. Devoluciones consistentes con el volumen de préstamo.</div></div>
+        
 
         <div class="in"><div class="it">Verano: devoluciones bajo el 100%</div><div class="ix">764 devoluciones vs. 826 préstamos (92.5%). Materiales prestados en verano se devuelven en agosto, ya dentro del 1° semestre.</div></div>
 
@@ -756,7 +748,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Preparación inscripción: actividad concentrada</div><div class="ix">85 devoluciones y 45 préstamos en el tramo 1–20 enero, antes del inicio formal de inscripción.</div></div>
 
-        <div class="in"><div class="it">Total devoluciones año: 4,503</div><div class="ix">Frente a 4,507 préstamos. La diferencia de 4 corresponde a préstamos activos al cierre del año.</div></div>
+        
 
       </div>
 
@@ -886,7 +878,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Cs. Jurídicas: mayor tasa de renovación</div><div class="ix">344 renovaciones vs 489 préstamos (70.3%). Los textos jurídicos se prolongan por uso continuo.</div></div>
 
-        <div class="in"><div class="it">Cs. Jurídicas: mayor participación de renovación</div><div class="ix">344 renovaciones vs 489 préstamos (70.3%). Los textos jurídicos se prolongan por uso continuo.</div></div>
+        
 
       </div>
 
@@ -1393,9 +1385,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Tasa de renovación: 38.3%</div><div class="ix">Casi 4 de cada 10 transacciones son prolongaciones — por encima del verano (20.3%) pero debajo del 1° semestre (40.1%).</div></div>
 
-        <div class="in"><div class="it">Relación devoluciones/préstamos: 101.6%</div><div class="ix">El relación ligeramente superior al 100% indica gestión eficiente y devoluciones de materiales prestados en el periodo anterior.</div></div>
+        
 
-        <div class="in"><div class="it">Renovaciones relevantes del periodo</div><div class="ix">Casi 4 de cada 10 transacciones son prolongaciones — por encima del verano (20.3%) pero debajo del 1° semestre (40.1%).</div></div>
+        
 
       </div>
 
@@ -1459,7 +1451,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Cs. Jurídicas: mayor tasa de renovación relativa</div><div class="ix">162 renovaciones sobre 218 préstamos (74%). Los textos de derecho y contabilidad se prolongan significativamente — señal de pocos ejemplares por demanda.</div></div>
 
-        <div class="in"><div class="it">Cs. Jurídicas: mayor participación de renovación relativa</div><div class="ix">162 renovaciones sobre 218 préstamos (74%). Los textos de derecho y contabilidad se prolongan significativamente — señal de pocos ejemplares por demanda.</div></div>
+        
 
         <div class="in"><div class="it">Personal de Apoyo: 5.22 libros/usuario</div><div class="ix">El promedio más alto del periodo. El personal que trabaja en el campus aprovecha el semestre regular para préstamos de mayor intensidad.</div></div>
 
@@ -1497,7 +1489,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Administración: alta renovación</div><div class="ix">126 renovaciones (69% de sus 183 préstamos). Alta tasa de prolongación que sugiere insuficiencia de ejemplares en el área.</div></div>
 
-        <div class="in"><div class="it">Administración: alta renovación</div><div class="ix">126 renovaciones (69% de sus 183 préstamos). Alta participación de prolongación que sugiere insuficiencia de ejemplares en el área.</div></div>
+        
 
         <div class="in"><div class="it">Área biomédica presente</div><div class="ix">Anatomía (74P, 76R), Bioquímica (51P) y Enfermería muestran la presencia continua de Ciencias de la Salud incluso en el 2° semestre.</div></div>
 
@@ -1523,7 +1515,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Cs. Jurídicas: alta renovación relativa</div><div class="ix">55 usuarios, 218 préstamos y 162 renovaciones. La tasa renovación/préstamo (74.3%) es la más alta del periodo.</div></div>
 
-        <div class="in"><div class="it">Cs. Jurídicas: alta renovación relativa</div><div class="ix">55 usuarios, 218 préstamos y 162 renovaciones. La participación renovación/préstamo (74.3%) es la más alta del periodo.</div></div>
+        
 
       </div>
 
@@ -1699,7 +1691,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Tasa de renovación mínima: 20.3%</div><div class="ix">La más baja del año. Los módulos tienen plazos cortos; los estudiantes devuelven y piden materiales nuevos sin prolongar.</div></div>
 
-        <div class="in"><div class="it">Participación de renovación mínima: 20.3%</div><div class="ix">La más baja del año. Los módulos tienen plazos cortos; los estudiantes devuelven y piden materiales nuevos sin prolongar.</div></div>
+        
 
         <div class="in"><div class="it">Devoluciones por debajo del 100%</div><div class="ix">764 devoluciones vs. 826 préstamos (92.5%). Los 62 materiales restantes se devuelven en las primeras semanas del 1° semestre.</div></div>
 
@@ -2009,7 +2001,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Tasa de renovación máxima: 40.1%</div><div class="ix">La más alta del año. En biomedicina, los nuevos estudiantes prolongan porque no encuentran nuevos ejemplares disponibles.</div></div>
 
-        <div class="in"><div class="it">Participación de renovación máxima: 40.1%</div><div class="ix">La más alta del año. En biomedicina, los nuevos estudiantes prolongan porque no encuentran nuevos ejemplares disponibles.</div></div>
+        
 
         <div class="in"><div class="it">Noviembre: caída notable (522 tx)</div><div class="ix">Los exámenes parciales y proyectos finales reducen visitas presenciales. El estudio se traslada a casa con los materiales ya en mano.</div></div>
 
@@ -2085,7 +2077,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Cs. Salud también lidera en renovaciones (770)</div><div class="ix">770 renovaciones sobre 835 préstamos — ratio del 92%. La escasez de ejemplares en ciencias básicas es crítica y requiere atención urgente.</div></div>
 
-        <div class="in"><div class="it">Cs. Salud también lidera en renovaciones (770)</div><div class="ix">770 renovaciones sobre 835 préstamos — relación del 92%. La escasez de ejemplares en ciencias básicas es crítica y requiere atención urgente.</div></div>
+        
 
         <div class="in"><div class="it">Prep. para el servicio: 13.50 libros/usuario</div><div class="ix">Solo 2 usuarios con 27 préstamos. Caso atípico de uso muy intensivo por un número reducido de personas.</div></div>
 
@@ -2147,7 +2139,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);font
 
         <div class="in"><div class="it">Cs. Salud: renovaciones casi igualan préstamos</div><div class="ix">770 renovaciones vs 835 préstamos — ratio del 92.2%. Señal de que la colección biomédica básica necesita urgente ampliación de ejemplares.</div></div>
 
-        <div class="in"><div class="it">Cs. Salud: renovaciones casi igualan préstamos</div><div class="ix">770 renovaciones vs 835 préstamos — relación del 92.2%. Señal de que la colección biomédica básica necesita urgente ampliación de ejemplares.</div></div>
+        
 
         <div class="in"><div class="it">Cs. Estomatológicas: recupera terreno (41 usuarios)</div><div class="ix">Con 136 préstamos, casi duplica su actividad respecto al 2° semestre (62 préstamos). Los nuevos ingresos de Cirujano Dentista en agosto explican el salto.</div></div>
 
